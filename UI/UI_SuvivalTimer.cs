@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-
+[RequireComponent(typeof(TMP_Text))]
 public class UI_SuvivalTimer : MonoBehaviour
 {
     private float _startTimeInSec;

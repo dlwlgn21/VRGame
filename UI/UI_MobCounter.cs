@@ -1,14 +1,12 @@
 using UnityEngine;
 using TMPro;
 
+[RequireComponent(typeof(TMP_Text))]
 public class UI_MobCounter : MonoBehaviour
 {
-    [SerializeField] private int _killCount;
-    [SerializeField] private int _spawnCount;
-
+    private int _killCount;
+    private int _spawnCount;
     private TextMeshProUGUI _textUI;
-
-
     public void OnSpawnMob()
     {
         ++_spawnCount;
